@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
 
 // Create a route to insert data into the database
 app.get('/adduser', (req, res) => {
-  let user = {name: 'praveen', email: 'praveen@gmail.com'};
+  let user = {name: 'praveen123', email: 'praveen123@gmail.com'};
   let sql = 'INSERT INTO users SET ?';
   let query = db.query(sql, user, (err, result) => {
     if (err) throw err;
