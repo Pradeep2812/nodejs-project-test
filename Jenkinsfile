@@ -12,7 +12,7 @@ pipeline{
                  withDockerRegistry(credentialsId: 'dockerhub'){
                     sh ''' docker build -t pradeep1228/nodejs:latest .
                     docker push pradeep1228/nodejs:latest 
-                    docker run --name con2 -p 3000:3000 -d pradeep1228/nodejs:latest '''
+                    docker run --name con3 -p 3002:3000 -d pradeep1228/nodejs:latest '''
                  }
                  }
             }
